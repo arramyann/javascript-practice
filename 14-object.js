@@ -34,3 +34,15 @@
     })
 
     console.log(names);
+
+    // c part
+
+    const total = students.reduce((acc, student) => {
+        acc += student.grade;
+        
+        return acc;
+    }, 0);
+
+    const average =  total/ students.length;
+
+    console.log(average);
