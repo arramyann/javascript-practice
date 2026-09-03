@@ -14,5 +14,23 @@
     const students = [
         {name: "Aram", grade: 85},
         {name: "Lilit", grade: 42},
-        
-    ]
+        {name: "Karen", grade: 91},
+        {name: "Nare", grade: 55}, 
+        {name:"Tigran", grade: 78},  
+    ];
+
+    //a part
+
+    const nerds = students.filter((student) => {
+        return student.grade >= 60;
+    })
+
+    console.log(nerds);
+
+    // b part 
+
+    const names = students.map((firstName) => {
+        return firstName.name;
+    })
+
+    console.log(names);
